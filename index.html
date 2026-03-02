@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Harsh Patel | Firewall Engineer</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #0f172a, #0a0f1c);
+    color: #e2e8f0;
+    line-height: 1.7;
+    scroll-behavior: smooth;
+}
+
+/* ===== HEADER ===== */
+header {
+    background: rgba(15, 23, 42, 0.95);
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #1e293b;
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+}
+
+header h1 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #22c55e;
+    letter-spacing: 1px;
+}
+
+nav a {
+    color: #cbd5e1;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+nav a:hover {
+    color: #22c55e;
+}
+
+/* ===== SECTIONS ===== */
+section {
+    padding: 90px 8%;
+}
+
+/* ===== HERO ===== */
+.hero {
+    text-align: center;
+    padding: 120px 8%;
+}
+
+.hero h2 {
+    font-size: 38px;
+    font-weight: 600;
+    color: #22c55e;
+}
+
+.hero p {
+    margin-top: 15px;
+    font-size: 16px;
+    color: #94a3b8;
+}
+
+/* ===== BUTTON ===== */
+.btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 28px;
+    background: #22c55e;
+    color: #0f172a;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background: #16a34a;
+    transform: translateY(-2px);
+}
+
+/* ===== CARDS ===== */
+.card {
+    background: rgba(17, 24, 39, 0.9);
+    padding: 28px;
+    border-radius: 12px;
+    border: 1px solid #1f2937;
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    border-color: #22c55e;
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(34, 197, 94, 0.08);
+}
+
+.card h3 {
+    margin-bottom: 12px;
+    font-size: 18px;
+    color: #22c55e;
+}
+
+.card p {
+    font-size: 14px;
+    color: #cbd5e1;
+}
+
+/* ===== GRID LAYOUT ===== */
+.skills-grid,
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+/* ===== SECTION TITLES ===== */
+section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #f1f5f9;
+    border-left: 4px solid #22c55e;
+    padding-left: 12px;
+}
+
+/* ===== SERVICE SECTION ===== */
+.service-cta {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.service-cta .btn {
+    padding: 14px 32px;
+    font-size: 15px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+/* ===== CONTACT SECTION ===== */
+#contact .card p {
+    margin-bottom: 8px;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #0f172a;
+    border-top: 1px solid #1e293b;
+    margin-top: 60px;
+    font-size: 14px;
+    color: #64748b;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Harsh Patel</h1>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Firewall & Network Security Engineer</h2>
+    <p>FortiGate Firewall | IPsec VPN | Application Control | Secure Network Design & Troubleshooting</p>
+    <a href="#contact" class="btn">Contact Me</a>
+</section>
+
+<section id="about">
+    <h2>About Me</h2>
+    <div class="card">
+        <p>
+            I am a Firewall & Network Security Engineer with hands-on expertise in FortiGate firewall configuration, IPsec VPN (Primary & Backup tunnel setup), Web Filtering, Application Control, NAT, DNS, and NTP configuration. I currently work in a banking IT infrastructure environment, managing live security policies, traffic monitoring, and advanced network troubleshooting.<br><br>
+
+            Additionally, I have experience configuring Windows internal system settings, including local security policies, network configuration, DNS settings, service management, patch update verification, user privilege control, and system-level troubleshooting to maintain secure and stable endpoint environments.
+        </p>
+    </div>
+</section>
+
+<section id="credibility">
+    <h2>Why Work With Me</h2>
+    <div class="card">
+        <p>
+            ✔ Real Banking Infrastructure Experience<br>
+            ✔ Hands-on Live Firewall Management<br>
+            ✔ Secure VPN Architecture Design<br>
+            ✔ Windows Internal Security Hardening<br>
+            ✔ Practical Troubleshooting in Production Environments
+        </p>
+    </div>
+</section>
+
+<section id="skills">
+    <h2>Technical Skills</h2>
+    <div class="skills-grid">
+        <div class="card">
+            <h3>Firewall & Security</h3>
+            <p>FortiGate Policies, NAT, SSL Inspection, Application Control, Web Filtering</p>
+        </div>
+
+        <div class="card">
+            <h3>Networking</h3>
+            <p>TCP/IP, VLAN, DNS, NTP, Routing, ICMP Troubleshooting</p>
+        </div>
+
+        <div class="card">
+            <h3>VPN</h3>
+            <p>IPsec Site-to-Site, Failover Configuration, SLA Monitoring</p>
+        </div>
+
+        <div class="card">
+            <h3>Windows System Administration</h3>
+            <p>Security Policy Configuration,User Privilege Management, Service Configuration, System Troubleshooting</p>
+        </div>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+        <div class="card">
+            <h3>Dual IPsec Tunnel Setup</h3>
+            <p>Configured Primary & Backup VPN tunnels with automatic failover and optimized routing.</p>
+        </div>
+
+        <div class="card">
+            <h3>Secure Outlook Access Policy</h3>
+            <p>Created firewall policy to restrict users to browser-based mail access only.</p>
+        </div>
+
+        <div class="card">
+            <h3>Patch Manager Whitelisting</h3>
+            <p>Secured enterprise updates by allowing only required domains through firewall rules.</p>
+        </div>
+
+        <div class="card">
+          <!--  <h3>DNS & NTP Configuration</h3>
+            <p>Configured internal DNS and centralized NTP synchronization for secure network operations.</p>-->
+            <h3>Enterprise Windows Security Hardening</h3>
+            <p>Implemented Windows internal security configurations including Local Security Policy enforcement, user privilege restriction, DNS and network adapter optimization, service configuration, patch validation, and endpoint-level troubleshooting to enhance system security and compliance within a banking IT environment.</p>
+        </div>
+    </div>
+</section>
+
+<section id="services">
+    <h2>Professional Services</h2>
+    <div class="services-grid">
+
+        <div class="card">
+            <h3>Enterprise Firewall Deployment</h3>
+            <p>
+                Complete FortiGate firewall implementation including security policy design,
+                NAT configuration, SSL inspection, application control, web filtering,
+                and secure segmentation aligned with enterprise security standards.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>IPsec VPN Architecture (Primary + Failover)</h3>
+            <p>
+                Secure site-to-site VPN setup with automatic failover, SLA monitoring,
+                route prioritization, and encrypted communication between corporate branches
+                or remote offices.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Banking & Corporate Network Hardening</h3>
+            <p>
+                Security policy auditing, rule optimization, unused policy cleanup,
+                DNS filtering, port restriction, and compliance-focused security reinforcement
+                for high-risk environments.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Windows Internal Security Configuration</h3>
+            <p>
+                Local Security Policy enforcement, user privilege management,
+                service configuration, DNS settings, patch validation,
+                and secure endpoint stabilization.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Firewall Troubleshooting & Optimization</h3>
+            <p>
+                Advanced log analysis, connectivity issue resolution,
+                VPN tunnel troubleshooting, traffic debugging,
+                and live environment performance tuning.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Security Consultation for Businesses</h3>
+            <p>
+                Structured security assessment and infrastructure guidance
+                for startups, SMEs, and enterprise environments to build
+                scalable and secure IT architecture.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="service-cta">
+        <a href="#contact" class="btn">Book Security Consultation</a>
+    </div>
+</section>
+
+<section id="process">
+    <h2>How I Work</h2>
+    <div class="services-grid">
+
+        <div class="card">
+            <h3>1. Requirement Discussion</h3>
+            <p>Understand your current infrastructure, security gaps, and business needs.</p>
+        </div>
+
+        <div class="card">
+            <h3>2. Security Assessment</h3>
+            <p>Analyze firewall rules, VPN setup, traffic logs, and system configurations.</p>
+        </div>
+
+        <div class="card">
+            <h3>3. Implementation</h3>
+            <p>Deploy secure firewall policies, VPN tunnels, and hardened configurations.</p>
+        </div>
+
+        <div class="card">
+            <h3>4. Documentation & Handover</h3>
+            <p>Provide structured documentation and support guidance for your IT team.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <div class="card">
+        <p>Name: Mr.Harsh Patel </p>
+        <p>Email: hptl0022@email.com</p>
+        <p>Mobile No: +91 6355130673</p>
+        <p style="margin-top:15px; font-weight:600; color:#22c55e;">
+        Response Time: Within 24 Hours
+        </p>
+      
+    </div>
+</section>
+
+<footer>
+    © 2026 Harsh Patel | Network Security Engineer  
+    <br>
+    Securing Networks. Protecting Businesses.
+</footer>
+
+</body>
+</html>
